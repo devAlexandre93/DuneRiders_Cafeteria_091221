@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DetailsActivity">
+
+        <include
+            layout="@layout/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            style="@style/DetailsImgView"
+            android:id="@+id/imageViewDetails"
+            android:adjustViewBounds="true" />
+
+        <TextView
+            style="@style/DetailsTextViews"
+            android:id="@+id/textViewInfos"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            style="@style/DetailsTextViews"
+            android:id="@+id/textViewName" />
+
+        <TextView
+            style="@style/DetailsTextViews"
+            android:id="@+id/textViewEmail"
+            android:autoLink="email" />
+
+        <TextView
+            style="@style/DetailsTextViews"
+            android:id="@+id/textViewGroup"
+            android:text="@string/txt_group"
+            />
+
+        <TextView
+            style="@style/DetailsTextViewWebsite"
+            android:id="@+id/textViewEpsiWebsite"
+            android:autoLink="web"
+            android:text="@string/txt_epsi_link" />
+
+</LinearLayout>

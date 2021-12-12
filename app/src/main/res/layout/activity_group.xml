@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context=".GroupActivity"
     android:orientation="vertical">
 
     <include
@@ -24,17 +24,24 @@
             android:layout_marginTop="-30dp">
 
             <Button
-                style="@style/MainButtons"
-                android:id="@+id/button_home_group"
-                android:text="@string/txt_btn_group"
+                style="@style/GroupButtons"
+                android:id="@+id/button_group_student1"
                 android:background="@drawable/round_button"
-                android:layout_marginBottom="20dp"/>
+                android:text="@string/txt_btn_student1" />
 
             <Button
-                style="@style/MainButtons"
-                android:id="@+id/button_home_ws"
-                android:text="@string/txt_btn_ws"
-                android:background="@drawable/round_button" />
+                style="@style/GroupButtons"
+                android:id="@+id/button_group_student2"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/round_button"
+                android:text="@string/txt_btn_student2" />
+
+            <Button
+                style="@style/GroupButtons"
+                android:id="@+id/button_group_student3"
+                android:background="@drawable/round_button"
+                android:text="@string/txt_btn_student3" />
 
         </LinearLayout>
 
