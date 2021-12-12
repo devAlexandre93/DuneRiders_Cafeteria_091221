@@ -1,6 +1,8 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Theme.Cafeteria" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Background brand color. -->
+        <item name="android:colorBackground">@color/white</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">@color/primary</item>
         <item name="android:windowLightStatusBar">true</item>
@@ -14,7 +16,7 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textSize">25sp</item>
         <item name="android:textStyle">bold</item>
-        <item name="android:textColor">@color/black</item>
+        <item name="android:textColor">@color/textColor</item>
         <item name="android:text">TextView</item>
     </style>
 
@@ -34,6 +36,7 @@
         <item name="android:layout_height">160dp</item>
         <item name="android:layout_gravity">center_horizontal</item>
         <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/textColor</item>
     </style>
 
     <!-- Group Activity style -->
@@ -43,6 +46,7 @@
         <item name="android:layout_height">100dp</item>
         <item name="android:layout_gravity">center_horizontal</item>
         <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/textColor</item>
     </style>
 
     <!-- Details Activity style -->
@@ -54,11 +58,11 @@
     </style>
 
     <style name="DetailsTextViews" parent="Widget.AppCompat.TextView">
-        <item name="android:textSize">30sp</item>
+        <item name="android:textSize">28sp</item>
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_height">45dp</item>
         <item name="android:gravity">center_horizontal</item>
-        <item name="android:textColor">@color/secondary</item>
+        <item name="android:textColor">@color/textColor</item>
     </style>
 
     <style name="DetailsTextViewWebsite" parent="Widget.AppCompat.TextView">
@@ -66,7 +70,18 @@
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">30dp</item>
         <item name="android:gravity">center_horizontal</item>
-        <item name="android:layout_marginTop">80dp</item>
+        <item name="android:layout_marginTop">60dp</item>
+        <item name="android:textColorLink">@color/secondary</item>
+    </style>
+
+    <!-- Button product style -->
+    <style name="ProductButton" parent="Widget.AppCompat.Button">
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_width">160dp</item>
+        <item name="android:layout_height">160dp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/textColor</item>
     </style>
 
 </resources>

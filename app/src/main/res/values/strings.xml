@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Cafeteria</string>
-    <string name="txt_btn_group">Le groupe</string>
-    <string name="txt_btn_ws">Le Web Service</string>
+    <string name="txt_btn_group">Les étudiants</string>
+    <string name="txt_btn_ws">La caféteria</string>
     <string name="txt_btn_student1">Clément Escande</string>
     <string name="txt_btn_student2">Yahya Qaddouri</string>
     <string name="txt_btn_student3">Alexandre Anania</string>
