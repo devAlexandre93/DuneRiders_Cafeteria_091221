@@ -16,5 +16,3 @@ class WebServiceActivity : BaseActivity() {
         showBack()
     }
 }
-
-//test*
