@@ -29,7 +29,7 @@ class GroupActivity : BaseActivity() {
             val newIntent = Intent(application,DetailsActivity::class.java)
             newIntent.putExtra("title","Yahya")
             newIntent.putExtra("urlImage","https://avatars.dicebear.com/v2/male/28665fe6eaa02541e25282e0a56c61aa.png")
-            newIntent.putExtra("infos","22 ans, Lormont")
+            newIntent.putExtra("infos","22 ans, Bordeaux")
             newIntent.putExtra("name","Yahya Qaddouri")
             newIntent.putExtra("email","yahya.qaddouri@epsi.fr")
             startActivity(newIntent)

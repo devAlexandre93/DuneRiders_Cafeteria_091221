@@ -1,5 +1,6 @@
 package fr.epsi.cafeteria
 
+import android.graphics.Color
 import android.os.Bundle
 import android.util.Log
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -14,5 +15,10 @@ class WebServiceActivity : BaseActivity() {
         setContentView(R.layout.activity_web_service)
         setHeaderTitle("Rayons")
         showBack()
+
+        val recyclerView = findViewById<RecyclerView>(R.id.recyclerViewCategories)
+        recyclerView.layoutManager = LinearLayoutManager(this)
+        val categoryAdapter = CategoryAdapter()
+        recyclerView.adapter= categoryAdapter
     }
 }
