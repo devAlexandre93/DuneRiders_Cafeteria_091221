@@ -6,22 +6,20 @@ import android.view.ViewGroup
 import android.widget.Button
 import androidx.recyclerview.widget.RecyclerView
 
-class CategoryAdapter: RecyclerView.Adapter<ViewHolder>() {
-
-    val buttonTitles = listOf("First button", "Second button", "Third button", "Fourth button")
+class CategoryAdapter(val categoryList: CategoryList): RecyclerView.Adapter<ViewHolder>() {
 
     override fun getItemCount(): Int {
-        return buttonTitles.size
+        return categoryList.items.count()
     }
 
     override fun onCreateViewHolder(viewGroup: ViewGroup, viewType: Int): ViewHolder {
-        val view = LayoutInflater.from(viewGroup.context).inflate(R.layout.category_button, viewGroup, false)
+        val view = LayoutInflater.from(viewGroup.context).inflate(R.layout.layout_category_button, viewGroup, false)
         return ViewHolder(view)
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        val buttonTitle = buttonTitles.get(position)
-        holder.buttonTitle.text = buttonTitle
+        val category = categoryList.items.get(position)
+        holder.buttonTitle.text = category.title
     }
 
 }

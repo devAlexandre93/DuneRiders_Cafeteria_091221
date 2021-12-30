@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Cafeteria">
         <activity
-            android:name=".DetailsActivity"
+            android:name=".StudentDetailsActivity"
             android:exported="false" />
         <activity
             android:name=".WebServiceActivity"
