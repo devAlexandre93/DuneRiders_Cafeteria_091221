@@ -8,5 +8,3 @@ dependencyResolutionManagement {
 }
 rootProject.name = "Cafeteria"
 include ':app'
-
-//test Git
