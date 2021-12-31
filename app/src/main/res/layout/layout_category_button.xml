@@ -7,6 +7,6 @@
     <Button
         style="@style/CategoryButtons"
         android:id="@+id/categoryButton"
-        android:background="@drawable/category_button" />
+        android:background="@drawable/gradient_black_border" />
 
 </LinearLayout>

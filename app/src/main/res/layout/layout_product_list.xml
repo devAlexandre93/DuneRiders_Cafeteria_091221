@@ -4,8 +4,33 @@
     android:layout_height="wrap_content"
     android:orientation="vertical">
 
-    <TextView
-        style="@style/ProductList"
-        android:id="@+id/productList" />
+    <LinearLayout
+        style="@style/ProductListContentLayout"
+        android:id="@+id/contentLayoutProductList"
+        android:background="@drawable/black_rectangle" >
+
+        <ImageView
+            style="@style/ProductListImgView"
+            android:id="@+id/imageViewProductList"
+            android:adjustViewBounds="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical"
+            android:background="@drawable/gradient_black_border">
+
+            <TextView
+                style="@style/ProductNameTxtView"
+                android:id="@+id/textViewProductName" />
+
+            <TextView
+                style="@style/ProductDescriptionTxtView"
+                android:id="@+id/textViewProductDescription" />
+
+        </LinearLayout>
+
+    </LinearLayout>
 
 </LinearLayout>

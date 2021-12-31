@@ -1,6 +1,5 @@
 package fr.epsi.cafeteria
 
-import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -28,7 +27,8 @@ class CategoryAdapter(val categoryList: CategoryList): RecyclerView.Adapter<View
         val category = categoryList.items.get(position)
         holder.button.text = category.title
         holder.button.setOnClickListener(View.OnClickListener {
-            (holder.button.context as BaseActivity).goToProductsList(category.title)
+            (holder.button.context as BaseActivity)
+                .goToProductsList(category.category_id, category.title, category.products_url)
         })
     }
 

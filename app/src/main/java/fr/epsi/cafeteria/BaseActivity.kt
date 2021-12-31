@@ -35,10 +35,16 @@ open class BaseActivity : AppCompatActivity() {
         textViewEmail.text = text
     }
 
-    fun goToProductsList(title: String) {
+    fun goToProductsList(id: String, title: String, productsUrl: String) {
         val newIntent = Intent(application, ProductsListActivity::class.java)
+        newIntent.putExtra("id", id)
         newIntent.putExtra("title", title)
+        newIntent.putExtra("productsUrl", productsUrl)
         startActivity(newIntent)
+    }
+
+    fun goToProductDetails() {
+
     }
 
 }

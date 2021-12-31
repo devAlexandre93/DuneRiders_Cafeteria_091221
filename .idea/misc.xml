@@ -3,8 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/aanan/AndroidStudioProjects/Cafeteria/app/src/main/res/drawable/black_rectangle.xml" value="0.19583333333333333" />
         <entry key="..\:/Users/aanan/AndroidStudioProjects/Cafeteria/app/src/main/res/drawable/border.xml" value="0.19583333333333333" />
         <entry key="..\:/Users/aanan/AndroidStudioProjects/Cafeteria/app/src/main/res/drawable/category_button.xml" value="0.19583333333333333" />
+        <entry key="..\:/Users/aanan/AndroidStudioProjects/Cafeteria/app/src/main/res/drawable/gradient.xml" value="0.19583333333333333" />
+        <entry key="..\:/Users/aanan/AndroidStudioProjects/Cafeteria/app/src/main/res/drawable/img_border.xml" value="0.19583333333333333" />
+        <entry key="..\:/Users/aanan/AndroidStudioProjects/Cafeteria/app/src/main/res/drawable/product_list.xml" value="0.1" />
         <entry key="..\:/Users/aanan/AndroidStudioProjects/Cafeteria/app/src/main/res/drawable/round_button.xml" value="0.19583333333333333" />
         <entry key="..\:/Users/aanan/AndroidStudioProjects/Cafeteria/app/src/main/res/layout/activity_categories.xml" value="0.1796875" />
         <entry key="..\:/Users/aanan/AndroidStudioProjects/Cafeteria/app/src/main/res/layout/activity_detail.xml" value="0.16666666666666666" />
@@ -20,7 +24,7 @@
         <entry key="..\:/Users/aanan/AndroidStudioProjects/Cafeteria/app/src/main/res/layout/cell_product.xml" value="0.1" />
         <entry key="..\:/Users/aanan/AndroidStudioProjects/Cafeteria/app/src/main/res/layout/header.xml" value="0.1" />
         <entry key="..\:/Users/aanan/AndroidStudioProjects/Cafeteria/app/src/main/res/layout/layout_category_button.xml" value="0.1796875" />
-        <entry key="..\:/Users/aanan/AndroidStudioProjects/Cafeteria/app/src/main/res/layout/layout_product_list.xml" value="0.1796875" />
+        <entry key="..\:/Users/aanan/AndroidStudioProjects/Cafeteria/app/src/main/res/layout/layout_product_list.xml" value="0.22" />
       </map>
     </option>
   </component>

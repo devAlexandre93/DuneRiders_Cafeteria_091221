@@ -46,6 +46,7 @@ class CategoriesActivity : BaseActivity() {
             }
         })
     }
+
 }
 
 class CategoryList (val items: List<Category>)
