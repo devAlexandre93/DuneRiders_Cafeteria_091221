@@ -19,7 +19,7 @@ class MainActivity : BaseActivity() {
         })
 
         buttonWebService.setOnClickListener(View.OnClickListener {
-            val newIntent = Intent(application,WebServiceActivity::class.java)
+            val newIntent = Intent(application,CategoriesActivity::class.java)
             startActivity(newIntent)
         })
 

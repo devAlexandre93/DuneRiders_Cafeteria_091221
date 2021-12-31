@@ -1,11 +1,9 @@
 package fr.epsi.cafeteria
 
-import android.view.View import android.widget.ImageView
-import android.widget.LinearLayout
-import android.widget.RelativeLayout
-import android.widget.TextView
+import android.content.Intent
+import android.view.View
+import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
-
 
 open class BaseActivity : AppCompatActivity() {
 
@@ -36,4 +34,11 @@ open class BaseActivity : AppCompatActivity() {
         val textViewEmail= findViewById<TextView>(R.id.textViewEmail)
         textViewEmail.text = text
     }
+
+    fun goToProductsList(title: String) {
+        val newIntent = Intent(application, ProductsListActivity::class.java)
+        newIntent.putExtra("title", title)
+        startActivity(newIntent)
+    }
+
 }

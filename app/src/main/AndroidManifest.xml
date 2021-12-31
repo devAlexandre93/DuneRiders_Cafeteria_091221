@@ -12,10 +12,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Cafeteria">
         <activity
+            android:name=".ProductsListActivity"
+            android:exported="false" />
+        <activity
             android:name=".StudentDetailsActivity"
             android:exported="false" />
         <activity
-            android:name=".WebServiceActivity"
+            android:name=".CategoriesActivity"
             android:exported="false" />
         <activity
             android:name=".GroupActivity"
@@ -25,6 +28,7 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

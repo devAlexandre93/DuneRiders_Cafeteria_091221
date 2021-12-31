@@ -7,7 +7,7 @@ import com.google.gson.GsonBuilder
 import okhttp3.*
 import java.io.IOException
 
-class WebServiceActivity : BaseActivity() {
+class CategoriesActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_categories)
@@ -37,7 +37,7 @@ class WebServiceActivity : BaseActivity() {
                 val recyclerView = findViewById<RecyclerView>(R.id.recyclerViewCategories)
                 val categoryAdapter = CategoryAdapter(categoryList)
                 runOnUiThread {
-                    recyclerView.adapter=categoryAdapter
+                    recyclerView.adapter = categoryAdapter
                 }
             }
 
