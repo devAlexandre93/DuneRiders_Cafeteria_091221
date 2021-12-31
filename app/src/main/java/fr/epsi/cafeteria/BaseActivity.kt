@@ -43,8 +43,12 @@ open class BaseActivity : AppCompatActivity() {
         startActivity(newIntent)
     }
 
-    fun goToProductDetails() {
-
+    fun goToProductDetails(title: String, description: String, productUrl: String) {
+        val newIntent = Intent(application, ProductDetailsActivity::class.java)
+        newIntent.putExtra("title", title)
+        newIntent.putExtra("description", description)
+        newIntent.putExtra("productUrl", productUrl)
+        startActivity(newIntent)
     }
 
 }

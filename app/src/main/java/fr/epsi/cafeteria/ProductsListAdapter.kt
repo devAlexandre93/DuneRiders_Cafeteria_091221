@@ -35,6 +35,10 @@ class ProductsListAdapter(val productsList: ProductsList): RecyclerView.Adapter<
         holder.textViewName.text = product.name
         holder.textViewDescription.text = product.description
         Picasso.get().load(product.picture_url).into(holder.imageViewProduct)
+        holder.contentLayout.setOnClickListener(View.OnClickListener {
+            (holder.contentLayout.context as BaseActivity)
+                .goToProductDetails(product.name, product.description, product.picture_url)
+        })
     }
 
 }

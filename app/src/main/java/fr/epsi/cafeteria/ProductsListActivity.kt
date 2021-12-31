@@ -12,8 +12,8 @@ class ProductsListActivity : BaseActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_products_list)
         intent.getStringExtra("title")?.let { setHeaderTitle(it) }
-        val url = intent.getStringExtra("productsUrl")
         showBack()
+        val url = intent.getStringExtra("productsUrl")
 
         val recyclerView = findViewById<RecyclerView>(R.id.recyclerViewProductsList)
         recyclerView.layoutManager = LinearLayoutManager(this)
