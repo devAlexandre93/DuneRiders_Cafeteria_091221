@@ -1,17 +1,13 @@
 package fr.epsi.cafeteria
 
+import android.content.Context
 import android.content.Intent
 import android.view.View
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import android.view.Gravity
-
 import android.widget.TextView
-
 import android.widget.Toast
-
-
-
 
 open class BaseActivity : AppCompatActivity() {
 
@@ -60,9 +56,9 @@ open class BaseActivity : AppCompatActivity() {
     }
 
     fun showToast(txt : String){
-        Toast.makeText(this,txt,Toast.LENGTH_SHORT).show()
+        val toast = Toast.makeText(this,txt,Toast.LENGTH_LONG)
+        toast.setGravity(Gravity.CENTER, 0, 0)
+        toast.show()
     }
-
-
 
 }

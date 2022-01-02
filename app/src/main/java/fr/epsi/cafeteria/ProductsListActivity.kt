@@ -17,6 +17,9 @@ class ProductsListActivity : BaseActivity() {
 
         val recyclerView = findViewById<RecyclerView>(R.id.recyclerViewProductsList)
         recyclerView.layoutManager = LinearLayoutManager(this)
+        val productsList = ProductsList(listOf())
+        val productsListAdapter = ProductsListAdapter(productsList)
+        recyclerView.adapter = productsListAdapter
 
         if (url != null) {
             fetchJson(url)
