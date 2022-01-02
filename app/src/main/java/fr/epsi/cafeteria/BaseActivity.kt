@@ -56,9 +56,7 @@ open class BaseActivity : AppCompatActivity() {
     }
 
     fun showToast(txt : String){
-        val toast = Toast.makeText(this,txt,Toast.LENGTH_LONG)
-        toast.setGravity(Gravity.CENTER, 0, 0)
-        toast.show()
+        Toast.makeText(this,txt,Toast.LENGTH_LONG).show()
     }
 
 }
