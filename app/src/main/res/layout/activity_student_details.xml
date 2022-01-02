@@ -27,8 +27,9 @@
             android:id="@+id/textViewName" />
 
         <TextView
-            style="@style/DetailsTextViews"
-            android:id="@+id/textViewEmail" />
+            style="@style/DetailsTextViewEmail"
+            android:id="@+id/textViewEmail"
+            android:autoLink="email"/>
 
         <TextView
             style="@style/DetailsTextViews"
