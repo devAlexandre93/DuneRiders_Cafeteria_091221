@@ -1,6 +1,5 @@
 package fr.epsi.cafeteria
 
-
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -34,7 +33,7 @@ class ProductsListAdapter(val productsList: ProductsList): RecyclerView.Adapter<
         val product = productsList.items.get(position)
         holder.textViewName.text = product.name
         holder.textViewDescription.text = product.description
-        Picasso.get().load(product.picture_url).into(holder.imageViewProduct)
+        Picasso.get().load(product.picture_url).error(R.drawable.no_image).into(holder.imageViewProduct)
         holder.contentLayout.setOnClickListener(View.OnClickListener {
             (holder.contentLayout.context as BaseActivity)
                 .goToProductDetails(product.name, product.description, product.picture_url)

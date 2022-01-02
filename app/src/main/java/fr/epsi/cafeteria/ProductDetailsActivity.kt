@@ -14,7 +14,7 @@ class ProductDetailsActivity : BaseActivity() {
 
         val imgView = findViewById<ImageView>(R.id.imgViewProductDetails)
         val urlImage = intent.getStringExtra("productUrl")
-        Picasso.get().load(urlImage).into(imgView)
+        Picasso.get().load(urlImage).error(R.drawable.no_image).into(imgView)
 
         val txtView = findViewById<TextView>(R.id.txtViewProductDetails)
         val description = intent.getStringExtra("description")
